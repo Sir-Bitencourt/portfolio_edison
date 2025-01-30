@@ -5,8 +5,6 @@ html, body {
     font-family: Roboto, sans-serif;
 }
 
-/* color: #02dffa; #459eb9*/
-
 .container {
     box-sizing: border-box !important;
     margin: 0 auto !important;
@@ -637,7 +635,26 @@ footer p {
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    #sobre-a-empresa .container-image {
+        width: 100%;  /* O carrossel ocupa toda a largura disponível do seu container */
+        max-width: 770px;
+        margin: 0 auto;  /* Centraliza o carrossel dentro da seção */
+        height: 200px; /* Defina uma altura fixa para o carrossel (ajuste conforme necessário) */
+        overflow: hidden; /* Garante que as imagens não ultrapassem a altura do carrossel */
+    }
+
+    .col-md-3 {
+        width: 50%;    /* A imagem ocupará 50% da largura do container */
+        height: auto;  /* Mantém a proporção da imagem */
+        margin: 0 auto;  /* Centraliza a imagem dentro do container */
+        display: block;   /* Para garantir que a imagem seja exibida como um bloco */
+    }
+
+    .container {
+        max-width: 750px;
+    }
 
 #container-photos .card-body {
     display: flex;
@@ -650,13 +667,93 @@ footer p {
 #container-photos .card-body .btn-primary {
     margin-bottom: 10px;
     }
+
+    #linguagens .carousel-inner img {
+        width: 50%;    /* A imagem ocupará 5% da largura no container */
+        height: 50px;  /* Mantém a proporção da imagem */
+        margin: 0 auto;  /* Centraliza a imagem dentro do container */
+        padding: 0 10px;
+    }
+
+    .row {
+        margin: 0 auto !important;
+    }
+
+    .col-md-3,
+    .col-4 {
+        padding: 5px;
+    }
+
+    .nav-projetos button.nav-link {
+        padding: 5px 10px; /* Ajusta o padding para o botão */
+        transition: background-color 0.3s ease; /* Adiciona um efeito de transição */
+    }
+    
+    .nav-projetos button.nav-link.active {
+        color: #000000; /* Cor do texto no botão ativo */
+        background: #02dffa;
+        transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+    }
+    
+    .nav-projetos button.nav-link:hover {
+        background: #02dffa;
+        color: #000000; /* Cor do texto ao passar o mouse */
+    }
+
+    #projetos .container h4,
+    #projetos .container h6,
+    #projetos .container p {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    #carouselExample .card {
+        width: 100%;  /* O card ocupa 100% da largura da tela */
+        max-width: 300px;  /* Mas não será maior que 350px */
+        height: auto;
+        margin: 0 10px;  /* Centraliza o card */
+    }
+
+    #carouselExample .card-body {
+        height: 150px;
+        padding: 10px 15px 0 15px;
+        font-size: 16px;
+    }
+
+    #carouselExample .card-body .btn-primary {
+        margin: 0 15px 10px 15px;
+        font-size: 16px;
+    }
+
+    #carouselExample .card-footer {
+        padding: 10px;
+    }
+
+    #carouselExample .carousel-item img {
+        width: 50%;          /* A imagem ocupa 50% da largura do contêiner */
+        height: auto;        /* Altura fixa para o contêiner da imagem */
+        object-fit: contain;  /* A imagem vai se ajustar ao tamanho do contêiner, mantendo a proporção */
+        object-position: center; /* Alinha a imagem no centro (caso a imagem seja menor) */
+        display: block;       /* Remove espaços em branco abaixo da imagem */
+        margin: 0 auto;       /* Centraliza a imagem horizontalmente (se necessário) */
+    }
+
+    .col-md-6,
+    .col-md-5 {
+        max-width: 350px;
+        margin-bottom: 0 !important;
+    }
 }
 
-@media screen and (min-width: 641px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
     #sobre-a-empresa .container-image {
         width: 100%;  /* O carrossel ocupa toda a largura disponível do seu container */
-        max-width: 800px; /* Limita a largura máxima do carrossel */
+        max-width: 1024px; /* Limita a largura máxima do carrossel */
         margin: 0 auto;  /* Centraliza o carrossel dentro da seção */
         height: 170px; /* Defina uma altura fixa para o carrossel (ajuste conforme necessário) */
         overflow: hidden; /* Garante que as imagens não ultrapassem a altura do carrossel */
@@ -776,7 +873,8 @@ footer p {
     }
 
     #whatsappModal .modal-dialog {
-        max-width: 350px; /* Define a largura máxima */
+        max-width: 200px; /* Define a largura máxima */
+        height: auto;
         margin: 1rem auto; /* Centraliza o modal verticalmente */
     }
 
@@ -787,24 +885,24 @@ footer p {
     #whatsappModal .modal-title,
     #whatsappModal .modal-body p,
     #whatsappModal .modal-body e-mail {
-        font-size: 16px;
+        font-size: 10px;
     }
 
     #whatsappModal .btn-close {
-        font-size: 30px !important;
+        font-size: 10px !important;
     }
 
     .modal-footer .btn-success {
         color: #0f617a !important; /* Cor preta para o "x" */
-        font-size: 14px !important; /* Tamanho do "x" */
+        font-size: 10px !important; /* Tamanho do "x" */
         opacity: 1 !important; /* Garante que o "x" fique visível */
     }
 
     #promoToast {
         max-width: 100px !important; /* Largura máxima do toast */
         width: 80% !important; /* Garante que o toast ocupe 80% da largura disponível */
-        min-width: 300px; /* Largura mínima para o toast */
-        font-size: 14px; /* Define o tamanho da fonte do conteúdo */
+        min-width: 200px; /* Largura mínima para o toast */
+        font-size: 10px; /* Define o tamanho da fonte do conteúdo */
     }
     
     .btn-success {
@@ -812,9 +910,9 @@ footer p {
         margin: 10px auto 0 auto;
         text-align: center;
         font-weight: bold;
-        padding: 10px 20px;
+        padding: 5px 10px;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 10px;
     }
 }
 
@@ -938,6 +1036,49 @@ footer p {
         display: block;       /* Remove espaços em branco abaixo da imagem */
         margin: 0 auto;       /* Centraliza a imagem horizontalmente (se necessário) */
     }
+
+    #whatsappModal .modal-dialog {
+        max-width: 200px; /* Define a largura máxima */
+        height: auto;
+        margin: 1rem auto; /* Centraliza o modal verticalmente */
+    }
+
+    #whatsappModal .modal-body {
+        padding: 0 10px 0 10px;
+    }
+
+    #whatsappModal .modal-title,
+    #whatsappModal .modal-body p,
+    #whatsappModal .modal-body e-mail {
+        font-size: 10px;
+    }
+
+    #whatsappModal .btn-close {
+        font-size: 10px !important;
+    }
+
+    .modal-footer .btn-success {
+        color: #0f617a !important; /* Cor preta para o "x" */
+        font-size: 10px !important; /* Tamanho do "x" */
+        opacity: 1 !important; /* Garante que o "x" fique visível */
+    }
+
+    #promoToast {
+        max-width: 100px !important; /* Largura máxima do toast */
+        width: 80% !important; /* Garante que o toast ocupe 80% da largura disponível */
+        min-width: 200px; /* Largura mínima para o toast */
+        font-size: 10px; /* Define o tamanho da fonte do conteúdo */
+    }
+    
+    .btn-success {
+        display: block;
+        margin: 10px auto 0 auto;
+        text-align: center;
+        font-weight: bold;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-size: 10px;
+    }
 }
 
 
@@ -1044,6 +1185,49 @@ footer p {
     #fale-conosco .col-md-5 {
         margin-left: 40px !important;
     }
+
+    #whatsappModal .modal-dialog {
+        max-width: 200px; /* Define a largura máxima */
+        height: auto;
+        margin: 1rem auto; /* Centraliza o modal verticalmente */
+    }
+
+    #whatsappModal .modal-body {
+        padding: 0 10px 0 10px;
+    }
+
+    #whatsappModal .modal-title,
+    #whatsappModal .modal-body p,
+    #whatsappModal .modal-body e-mail {
+        font-size: 10px;
+    }
+
+    #whatsappModal .btn-close {
+        font-size: 10px !important;
+    }
+
+    .modal-footer .btn-success {
+        color: #0f617a !important; /* Cor preta para o "x" */
+        font-size: 10px !important; /* Tamanho do "x" */
+        opacity: 1 !important; /* Garante que o "x" fique visível */
+    }
+
+    #promoToast {
+        max-width: 100px !important; /* Largura máxima do toast */
+        width: 80% !important; /* Garante que o toast ocupe 80% da largura disponível */
+        min-width: 200px; /* Largura mínima para o toast */
+        font-size: 10px; /* Define o tamanho da fonte do conteúdo */
+    }
+    
+    .btn-success {
+        display: block;
+        margin: 10px auto 0 auto;
+        text-align: center;
+        font-weight: bold;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width: 2500px) {
@@ -1086,7 +1270,7 @@ footer p {
 
     .navbar>.container {
         width: 100%;    /* A imagem ocupará 60% da largura do container */
-        max-width: 2400px;
+        max-width: 2500px;
         height: auto;  /* Mantém a proporção da imagem */
         margin: 0 auto;  /* Centraliza a imagem dentro do container */
         display: flex;   /* Para garantir que a imagem seja exibida como um bloco */
@@ -1216,5 +1400,48 @@ footer p {
 
     .form-label, .form-control, .btn {
         font-size: 30px; /* Ajuste para os elementos do formulário */
+    }
+
+    #whatsappModal .modal-dialog {
+        max-width: 200px; /* Define a largura máxima */
+        height: auto;
+        margin: 1rem auto; /* Centraliza o modal verticalmente */
+    }
+
+    #whatsappModal .modal-body {
+        padding: 0 10px 0 10px;
+    }
+
+    #whatsappModal .modal-title,
+    #whatsappModal .modal-body p,
+    #whatsappModal .modal-body e-mail {
+        font-size: 10px;
+    }
+
+    #whatsappModal .btn-close {
+        font-size: 10px !important;
+    }
+
+    .modal-footer .btn-success {
+        color: #0f617a !important; /* Cor preta para o "x" */
+        font-size: 10px !important; /* Tamanho do "x" */
+        opacity: 1 !important; /* Garante que o "x" fique visível */
+    }
+
+    #promoToast {
+        max-width: 100px !important; /* Largura máxima do toast */
+        width: 80% !important; /* Garante que o toast ocupe 80% da largura disponível */
+        min-width: 200px; /* Largura mínima para o toast */
+        font-size: 10px; /* Define o tamanho da fonte do conteúdo */
+    }
+    
+    .btn-success {
+        display: block;
+        margin: 10px auto 0 auto;
+        text-align: center;
+        font-weight: bold;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-size: 10px;
     }
 }
