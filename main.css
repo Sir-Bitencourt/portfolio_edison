@@ -1001,7 +1001,7 @@ footer p {
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 
     #cabecalho h1 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .nav-pills .nav-link {
@@ -1013,7 +1013,7 @@ footer p {
         width: 100%;  /* O carrossel ocupa toda a largura disponível do seu container */
         max-width: 1440px;
         margin: 0 auto;  /* Centraliza o carrossel dentro da seção */
-        height: 220px; /* Defina uma altura fixa para o carrossel (ajuste conforme necessário) */
+        height: 250px; /* Defina uma altura fixa para o carrossel (ajuste conforme necessário) */
         overflow: hidden; /* Garante que as imagens não ultrapassem a altura do carrossel */
     }
 
@@ -1044,8 +1044,8 @@ footer p {
     }
     
     #linguagens .carousel-inner img {
-        width: 15%;    /* A imagem ocupará 10% da largura do container */
-        height: 80px;  /* Mantém a proporção da imagem */
+        width: 15%;    /* A imagem ocupará 15% da largura do container */
+        height: 50px;  /* Mantém a proporção da imagem */
         margin: 0 auto;  /* Centraliza a imagem dentro do container */
         padding: 0 10px;
     }
@@ -1074,11 +1074,11 @@ footer p {
 
     .col-md-7 {
         width: 75%;
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .col-md-12 {
-        font-size: 18px;
+        font-size: 22px;
         padding-top: 20px;
     }
 
@@ -1120,7 +1120,7 @@ footer p {
     }
 
     #whatsappModal .modal-dialog {
-        max-width: 200px; /* Define a largura máxima */
+        max-width: 250px; /* Define a largura máxima */
         height: auto;
         margin: 1rem auto; /* Centraliza o modal verticalmente */
     }
@@ -1132,24 +1132,24 @@ footer p {
     #whatsappModal .modal-title,
     #whatsappModal .modal-body p,
     #whatsappModal .modal-body e-mail {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     #whatsappModal .btn-close {
-        font-size: 10px !important;
+        font-size: 20px !important;
     }
 
     .modal-footer .btn-success {
         color: #0f617a !important; /* Cor preta para o "x" */
-        font-size: 10px !important; /* Tamanho do "x" */
+        font-size: 14px !important; /* Tamanho do "x" */
         opacity: 1 !important; /* Garante que o "x" fique visível */
     }
 
     #promoToast {
-        max-width: 100px !important; /* Largura máxima do toast */
-        width: 80% !important; /* Garante que o toast ocupe 80% da largura disponível */
-        min-width: 200px; /* Largura mínima para o toast */
-        font-size: 10px; /* Define o tamanho da fonte do conteúdo */
+        max-width: 150px !important; /* Largura máxima do toast */
+        width: 100% !important; /* Garante que o toast ocupe 80% da largura disponível */
+        min-width: 250px; /* Largura mínima para o toast */
+        font-size: 14px; /* Define o tamanho da fonte do conteúdo */
     }
     
     .btn-success {
@@ -1159,7 +1159,7 @@ footer p {
         font-weight: bold;
         padding: 5px 10px;
         text-decoration: none;
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
@@ -1273,7 +1273,7 @@ footer p {
     }
 
     #whatsappModal .modal-dialog {
-        max-width: 200px; /* Define a largura máxima */
+        max-width: 300px; /* Define a largura máxima */
         height: auto;
         margin: 1rem auto; /* Centraliza o modal verticalmente */
     }
@@ -1285,24 +1285,24 @@ footer p {
     #whatsappModal .modal-title,
     #whatsappModal .modal-body p,
     #whatsappModal .modal-body e-mail {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     #whatsappModal .btn-close {
-        font-size: 10px !important;
+        font-size: 20px !important;
     }
 
     .modal-footer .btn-success {
         color: #0f617a !important; /* Cor preta para o "x" */
-        font-size: 10px !important; /* Tamanho do "x" */
+        font-size: 14px !important; /* Tamanho do "x" */
         opacity: 1 !important; /* Garante que o "x" fique visível */
     }
 
     #promoToast {
-        max-width: 100px !important; /* Largura máxima do toast */
-        width: 80% !important; /* Garante que o toast ocupe 80% da largura disponível */
-        min-width: 200px; /* Largura mínima para o toast */
-        font-size: 10px; /* Define o tamanho da fonte do conteúdo */
+        max-width: 200px !important; /* Largura máxima do toast */
+        width: 100% !important; /* Garante que o toast ocupe 80% da largura disponível */
+        min-width: 300px; /* Largura mínima para o toast */
+        font-size: 14px; /* Define o tamanho da fonte do conteúdo */
     }
     
     .btn-success {
@@ -1312,7 +1312,7 @@ footer p {
         font-weight: bold;
         padding: 5px 10px;
         text-decoration: none;
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
@@ -1489,7 +1489,7 @@ footer p {
     }
 
     #whatsappModal .modal-dialog {
-        max-width: 200px; /* Define a largura máxima */
+        max-width: 500px; /* Define a largura máxima */
         height: auto;
         margin: 1rem auto; /* Centraliza o modal verticalmente */
     }
@@ -1501,24 +1501,24 @@ footer p {
     #whatsappModal .modal-title,
     #whatsappModal .modal-body p,
     #whatsappModal .modal-body e-mail {
-        font-size: 10px;
+        font-size: 26px;
     }
 
     #whatsappModal .btn-close {
-        font-size: 10px !important;
+        font-size: 40px !important;
     }
 
     .modal-footer .btn-success {
         color: #0f617a !important; /* Cor preta para o "x" */
-        font-size: 10px !important; /* Tamanho do "x" */
+        font-size: 26px !important; /* Tamanho do "x" */
         opacity: 1 !important; /* Garante que o "x" fique visível */
     }
 
     #promoToast {
-        max-width: 100px !important; /* Largura máxima do toast */
+        max-width: 500px !important; /* Largura máxima do toast */
         width: 80% !important; /* Garante que o toast ocupe 80% da largura disponível */
-        min-width: 200px; /* Largura mínima para o toast */
-        font-size: 10px; /* Define o tamanho da fonte do conteúdo */
+        min-width: 400px; /* Largura mínima para o toast */
+        font-size: 26px; /* Define o tamanho da fonte do conteúdo */
     }
     
     .btn-success {
@@ -1528,6 +1528,6 @@ footer p {
         font-weight: bold;
         padding: 5px 10px;
         text-decoration: none;
-        font-size: 10px;
+        font-size: 26px;
     }
 }
