@@ -1484,6 +1484,10 @@ footer p {
         font-size: 50px;
     }
 
+    .btn-primary {
+        margin-top: 50px !important;
+    }
+
     .form-label, .form-control, .btn {
         font-size: 30px; /* Ajuste para os elementos do formulário */
     }
