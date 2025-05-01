@@ -2,7 +2,7 @@ html, body {
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    font-family: Roboto, sans-serif;
+    font-family: 'Lora', serif;
 }
 
 .container {
@@ -10,71 +10,75 @@ html, body {
     margin: 0 auto !important;
 }
 
+.section-title {
+    font-family: 'Merriweather', sans-serif;
+}
+
+.fw-bold {
+    margin: 5px;
+}
+
 #sobre-a-empresa, #linguagens,
 #projetos,
 #container-photos,
 #fale-conosco,
 .container-persona p {
-    background: #000000;
+    background: #E6D5B8;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: #459eb9;
+    color: #2E4F4F;
 }
 
 .navbar-toggler,
 .navbar-toggler-icon {
     filter: invert(4%) sepia(191%) saturate(1227%) hue-rotate(167deg) brightness(98%) contrast(95%);
-    border-color: #02dffa;
+    border-color: #3B6969;
 }
 
 .navbar, footer {
-    background: #000000;
+    background: #5C3D2E !important;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: #02dffa;
+    color: #E6D5B8 !important;
 }
 
 #cabecalho h1 {
     font-weight: bold;
     font-style: italic;
-    color: #02dffa;
+    color: #E6D5B8;
     font-size: 25px;
 }
 
-/* Estilo padrão para os links */
 #cabecalho .nav-link {
-    color: #02dffa;
-    background: #000000;
+    color: #2E4F4F !important;
+    background: #E6D5B8 !important;
     font-style: italic;
     border-radius: 5px;
     padding-bottom: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Estilo para o link ativo */
 #cabecalho .nav-link.active {
-    background: #02dffa; /* Fundo azul neon */
-    color: #000000; /* Texto preto */
+    background: #2E4F4F !important;
+    color: #E6D5B8 !important;
     font-weight: bold;
-    border-color: #02dffa;
+    border-color: #3B6969;
 }
 
-/* Estilo para hover */
 #cabecalho .nav-link:hover {
-    background: #02dffa !important; /* Fundo azul neon ao passar o mouse */
-    color: #000000 !important; /* Texto preto */
-    border-color: #02dffa !important; /* Borda azul neon */
+    background: #3B6969 !important;
+    color: #E6D5B8 !important;
+    border-color: #2E4F4F !important;
 }
 
-.section-title {
-    font-family: Pacifico, cursive;
+
+.col-md-3 {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
-.container {
-    margin: 0;
-}
-
-/* Garantir que a imagem ocupe 100% da largura e mantenha a proporção */
 .container-image img {
     width: 100%;
     height: auto;
@@ -82,22 +86,22 @@ html, body {
     overflow: hidden;
 }
 
-/* Botão entre em contato e enviar */
 .container-persona .row button,
 #fale-conosco button {
-    background: #000000; /* cor de fundo dos botões */
+    background: #5C3D2E !important;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: #459eb9;
-    border-color: #02dffa;
+    color: #E6D5B8 !important;
+    border-color: #2E4F4F !important;
     font-weight: bold;
+    align-items: center !important;
 }
 
 .container-persona .row button:hover,
 #fale-conosco button:hover {
-    color: #000000;
-    border-color: #02dffa;
-    background: #02dffa;
+    color: #E6D5B8 !important;
+    border-color: #3B6969 !important;
+    background: #3B6969 !important;
 }
 
 .social-links li {
@@ -107,7 +111,7 @@ html, body {
 }
 
 .social-links a {
-    color:#02dffa;
+    color: #2E4F4F !important;
     text-decoration: none;
 }
 
@@ -117,31 +121,32 @@ footer {
 }
 
 #linguagens .carousel-inner {
-    overflow: hidden; /* Esconde imagens que saem da tela */
-    width: 100%;      /* Define a largura do container */
+    overflow: hidden;
+    width: 100%;
 }
 
 #linguagens .carousel-item-content {
-    display: flex;            /* Exibe as imagens em linha */
-    gap: 10px;                /* Espaçamento de 10px entre as imagens */
-    animation: carrossel 20s linear infinite; /* Animação contínua de 20s */
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    animation: carrossel 20s linear infinite;
+    width: max-content;
 }
 
 #linguagens .carousel-item-content img {
-    height: auto;   /* Altura fixa das imagens */
+    height: auto;
+    width: 200px;
 }
 
-/* Animação do carrossel */
 @keyframes carrossel {
     0% {
-        transform: translateX(0); /* Começa na posição inicial */
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%); /* Move todas as imagens para a esquerda */
+        transform: translateX(-30%);
     }
 }
 
-/* Configuração do card projetos de clientes */
 #projetos {
     padding: 20px 0 20px 10px;
 }
@@ -161,7 +166,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(94, 61, 46, 0.7);
     padding: 10px;
     border-radius: 10px;
 }
@@ -169,7 +174,7 @@ footer {
 #projetos .col-md-10 .card .card-img-overlay h4,
 #projetos .col-md-10 .card .card-img-overlay h6,
 #projetos .col-md-10 .card .card-img-overlay p {
-    color: #459eb9;
+    color: #E6D5B8;
     font-weight: bold;
     overflow: hidden;
 }
@@ -197,69 +202,65 @@ footer {
 }
 
 .card {
-    border-color: #02dffa;
+    border-color: #83A7A7 !important;
     margin-bottom: 20px;
     border-radius: 10px;
+    background: #F5F0E6 !important;
 }
 
-/* Botões dos cards */
 .btn-primary {
-    color: #459eb9 !important;
-    background: #000000;
-    border-color: #02dffa;
+    color: #E6D5B8 !important;
+    background: #5C3D2E !important;
+    border-color: #2E4F4F !important;
     font-size: 30px;
 }
 
 .btn-primary:hover {
-    background: #02dffa;
-    color: #000000 !important;
-    border-color: #000000 !important;
+    background: #3B6969 !important;
+    color: #E6D5B8 !important;
+    border-color: #2E4F4F !important;
     transform: scale(1.02, 1.01);
 }
 
 .btn-primary:active {
-    background: #000000 !important;
-    color: #02dffa !important;
-    border-color: #02dffa !important;
+    background: #5C3D2E !important;
+    color: #E6D5B8 !important;
+    border-color: #2E4F4F !important;
 }
 
-/* Configuração dos cards projetos de clientes */
 #container-photos .card-body {
     max-width: 100%;
     overflow: hidden;
-    background: #000000;
-    color: #459eb9;
-    border-color: #02dffa;
+    background: #F5F0E6 !important;
+    color: #2E4F4F !important;
+    border-color: #83A7A7;
 }
 
-/* Texto, cabeçalho e rodapé dos cards dos projetos de clientes */
 .card-header,
 .card-footer {
-    color: #459eb9;
-    background: #000000;
-    border-color: #02dffa;
+    color: #2E4F4F !important;
+    background: #C4B6B6 !important;
+    border-color: #83A7A7 !important;
 }
 
-/* Estilo para os botões nav dentro da classe projetos realizados */
-
 .nav-projetos button.nav-link {
-    color: #02dffa; /* Cor do texto do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 5px; /* Adiciona borda arredondada */
+    color: #5C3D2E !important;
+    border: none;
+    border-radius: 5px;
     margin: 5px;
-    padding: 10px; /* Ajusta o padding para o botão */
-    transition: background-color 0.3s ease; /* Adiciona um efeito de transição */
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .nav-projetos button.nav-link.active {
-    color: #000000; /* Cor do texto no botão ativo */
-    background: #02dffa;
-    transition: background-color 0.3s ease; /* Transição suave para a mudança de cor */
+    color: #E6D5B8 !important;
+    background: #3B6969 !important;
+    transition: background-color 0.3s ease;
 }
 
 .nav-projetos button.nav-link:hover {
-    background: #02dffa;
-    color: #000000; /* Cor do texto ao passar o mouse */
+    background: #2E4F4F !important;
+    color: #E6D5B8 !important;
 }
 
 #fale-conosco h2 {
@@ -269,12 +270,7 @@ footer {
 #fale-conosco label.form-label,
 #fale-conosco h3.section-title,
 #fale-conosco p, h2 {
-    color: #459eb9;
-}
-
-#fale-conosco label.form-label,
-#fale-conosco h3.section-title,
-#fale-conosco p, h2 {
+    color: #5C3D2E !important;
     font-style: italic;
 }
 
@@ -282,29 +278,23 @@ footer {
     padding: 20px !important;
 }
 
-/* Botão "Vamos conversar" de acesso ao WhatsApp */
 #fale-conosco .btn-whatsapp {
     font-style: italic;
-    background: transparent;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #02dffa;
-    border-color: #02dffa;
-    background: #000000;
+    background: #5C3D2E !important;
+    color: #E6D5B8 !important;
+    border-color: #2E4F4F !important;
 }
 
 #fale-conosco .btn-whatsapp:hover {
-    color: #000000;
-    background: #02dffa;
-    border-color: #02dffa;
+    color: #E6D5B8 !important;
+    background: #3B6969 !important;
+    border-color: #2E4F4F !important;
 }
 
 #fale-conosco .btn-whatsapp:active {
-    background: transparent;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #02dffa;
-    border-color: #02dffa;
+    background: #5C3D2E !important;
+    color: #E6D5B8 !important;
+    border-color: #2E4F4F !important;
 }
 
 button {
@@ -337,12 +327,10 @@ form button {
     margin-bottom: 20px;
 }
 
-/* botão do WhatsApp - personalização do tamanho do modal */
-
 #whatsappModal .modal-dialog {
-    max-width: 200px; /* Define a largura máxima */
+    max-width: 200px;
     height: auto;
-    margin: 1rem auto; /* Centraliza o modal verticalmente */
+    margin: 1rem auto;
 }
 
 #whatsappModal .modal-body {
@@ -360,16 +348,18 @@ form button {
 }
 
 .modal-footer .btn-success {
-    color: #0f617a !important; /* Cor preta para o "x" */
-    font-size: 10px !important; /* Tamanho do "x" */
-    opacity: 1 !important; /* Garante que o "x" fique visível */
+    background: #E6D5B8 !important;
+    font-size: 10px !important;
+    opacity: 1 !important;
 }
 
 #promoToast {
-    max-width: 100px !important; /* Largura máxima do toast */
-    width: 80% !important; /* Garante que o toast ocupe 80% da largura disponível */
-    min-width: 200px; /* Largura mínima para o toast */
-    font-size: 10px; /* Define o tamanho da fonte do conteúdo */
+    max-width: 100px !important;
+    width: 80% !important;
+    min-width: 200px;
+    font-size: 10px;
+    background: #F5F0E6 !important;
+    color: #2E4F4F !important;
 }
 
 .btn-success {
@@ -380,96 +370,20 @@ form button {
     padding: 5px 10px;
     text-decoration: none;
     font-size: 10px;
+    background: #3B6969 !important;
+    color: #E6D5B8 !important;
 }
 
-#whatsappModal .modal-dialog {
-    max-width: 800px; /* Define a largura máxima */
-    margin: 2rem auto; /* Centraliza o modal verticalmente */
-}
-
-/* Personalização do tamanho da fonte no modal */
-#whatsappModal .modal-title {
-    font-size: 40px; /* Tamanho maior para o título */
-    font-weight: bold; /* Título em negrito */
-}
-
-#whatsappModal .modal-body p,
-#whatsappModal .modal-body e-mail {
-    font-size: 30px; /* Define o tamanho da fonte para o corpo do modal */
-    line-height: 1.5; /* Melhora o espaçamento entre linhas */
-    color: #0f617a;
-}
-
-/* Personalização do botão de fechamento */
-#whatsappModal .btn-close {
-    background-color: transparent !important; /* Fundo transparente */
-    color: #0f617a !important; /* Cor preta para o "x" */
-    font-size: 50px !important; /* Tamanho do "x" */
-    opacity: 1 !important; /* Garante que o "x" fique visível */
-    cursor: pointer;
-    padding: 0 10px 20px 10px; /* Espaçamento do "x" */
-}
-
-/* Alterando cor do "x" ao passar o mouse */
-#whatsappModal .btn-close:hover {
-    color: #0f617a; /* Cor do "x" ao passar o mouse */
-}
-
-/* Garantir que o "x" apareça corretamente */
-#whatsappModal .btn-close::before {
-    content: "×"; /* Usando o "x" padrão */
-}
-
-.modal-footer .btn-success {
-    color: #000000; /* Cor do texto */
-    background-color: #02dffa; /* Cor de fundo */
-    border-color: #000000; /* Cor da borda */
-}
-
+.btn-success:hover,
 .modal-footer .btn-success:hover {
-    color: #02dffa; /* Cor do texto */
-    background-color: #000000; /* Cor de fundo */
-    border-color: #02dffa; /* Cor da borda */
+    color: #E6D5B8 !important;
+    background: #2E4F4F !important;
 }
 
+.btn-success:active,
 .modal-footer .btn-success:active {
-    color: #02dffa; /* Cor do texto */
-    background-color: #000000; /* Cor de fundo */
-    border-color: #02dffa; /* Cor da borda */
-}
-
-/* botão do opinião */
-
-#promoToast {
-    max-width: 500px; /* Largura máxima do toast */
-    width: 100%; /* Garante que o toast ocupe toda a largura disponível até o máximo */
-    min-width: 300px; /* Largura mínima para o toast */
-    font-size: 30px; /* Define o tamanho da fonte do conteúdo */
-}
-
-.btn-success {
-    display: block;
-    margin: 10px auto 0 auto;
-    text-align: center;
-    font-weight: bold;
-    color: #000000;
-    background-color: #02dffa;
-    border-color: #000000;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.btn-success:hover {
-    color: #02dffa;
-    background-color: #000000;
-    border-color: #02dffa;
-}
-
-.btn-success:active {
-    color: #000000 !important; /* Cor do texto */
-    background-color: #02dffa !important; /* Cor de fundo */
-    border-color: #000000 !important; /* Cor da borda */
+    color: #E6D5B8 !important;
+    background: #3B6969 !important;
 }
 
 footer p {
@@ -496,8 +410,31 @@ footer p {
         padding: 5px;
     }
 
+    .col-md-3 {
+        width: 80%;    /* A imagem ocupará 80% da largura do container */
+        height: auto;  /* Mantém a proporção da imagem */
+        margin: 0 auto;  /* Centraliza a imagem dentro do container */
+        display: block;   /* Para garantir que a imagem seja exibida como um bloco */
+    }
+
     .row {
         margin: 0 10px 0 10px !important;
+    }
+
+    .row h2 {
+        font-size: 20px !important;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .row h3 {
+        margin: 0 !important;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .row p {
+        font-size: 12px;
     }
 
     .container-persona {
@@ -688,13 +625,6 @@ footer p {
         overflow: hidden; /* Garante que as imagens não ultrapassem a altura do carrossel */
     }
 
-    .col-md-3 {
-        width: 50%;    /* A imagem ocupará 50% da largura do container */
-        height: auto;  /* Mantém a proporção da imagem */
-        margin: 0 auto;  /* Centraliza a imagem dentro do container */
-        display: block;   /* Para garantir que a imagem seja exibida como um bloco */
-    }
-
     .container {
         max-width: 750px;
     }
@@ -852,14 +782,19 @@ footer p {
         padding: 0 10px;
     }
 
-    .col-md-7 {
-        width: 75%;
-        justify-content: space-between;
-        font-size: 14px;
+    .row h2 {
+        font-size: 28px !important;
+        padding-bottom: 10px;
     }
 
-    .col-md-10 {
-        padding: 0;
+    .row h3 {
+        margin: 0 !important;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .row p {
+        font-size: 14px;
     }
 
     .tab-content .row {
@@ -935,12 +870,13 @@ footer p {
     }
 
     .col-md-3 {
-        margin-top: 20px;
+        max-width: 100%;
         height: auto;
+        padding: 0;
     }
 
     .col-md-7 {
-        width: 75%;
+        width: 70%;
         justify-content: space-between;
         font-size: 14px;
     }
@@ -1019,7 +955,6 @@ footer p {
 
     #container-photos {
         width: 100%; /* O fundo ocupa toda a largura da tela */
-        padding: 60px 0; /* Adiciona espaçamento vertical (opcional) */
     }
     
     #carouselExample {
@@ -1042,16 +977,27 @@ footer p {
         max-width: 100%; /* Limita a largura da imagem a 100% do container */
         height:fit-content; /* Ajusta a altura automaticamente */
     }
+
+    .row h2 {
+        font-size: 28px !important;
+        padding-bottom: 10px;
+    }
+
+    .row h3 {
+        margin: 0 !important;
+        padding-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .row p {
+        font-size: 18px;
+    }
     
     #linguagens .carousel-inner img {
         width: 15%;    /* A imagem ocupará 15% da largura do container */
         height: 50px;  /* Mantém a proporção da imagem */
         margin: 0 auto;  /* Centraliza a imagem dentro do container */
         padding: 0 10px;
-    }
-
-    #linguagens p {
-        font-size: 14px;
     }
 
     .container-persona {
@@ -1062,7 +1008,6 @@ footer p {
 
     .container-persona .col-md-3 img {
         max-height:max-content;   /* Aumenta a altura máxima para telas grandes */
-        margin-top: 20px;
     }
 
     .col-md-3 {
@@ -1203,8 +1148,18 @@ footer p {
     }
 
     .row h2 {
-        padding-bottom: 50px;
-        font-size: 36px;
+        font-size: 32px !important;
+        padding-bottom: 20px;
+    }
+
+    .row h3 {
+        margin: 0 !important;
+        padding-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .row p {
+        font-size: 20px;
     }
 
     .container-persona {
@@ -1325,7 +1280,7 @@ footer p {
     .navbar a,
     .container-persona .row button,
     #fale-conosco button {
-        padding-right: 100px;
+        padding-right: 120px;
         font-size: 30px;
     }
 
@@ -1377,7 +1332,18 @@ footer p {
     }
 
     .row h2 {
-        padding-bottom: 50px;
+        font-size: 50px !important;
+        padding-bottom: 20px;
+    }
+
+    .row h3 {
+        margin: 0 !important;
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .row p {
+        font-size: 30px;
     }
 
     .container-persona {
